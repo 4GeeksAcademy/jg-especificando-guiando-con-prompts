@@ -87,6 +87,7 @@ The project is a full HTML prototype for an admin dashboard so the company's tea
 ### 2. Global interactions and information
 
   - Add a togle for dark/light theme (*using only Tailwind's dark:*)
+    + Be mindful of contrast when switching to dark theme so nothing is hard to read.
   - Each section has h1 with it's name.
   - Overall colors for the website should be black, gray, dark blue and white.
 
