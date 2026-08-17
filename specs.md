@@ -61,7 +61,7 @@ The project is a full HTML prototype for an admin dashboard so the company's tea
 #### Skills
 
   1. Heading with a brief explanation of what skills are in the context of AgentHub.
-  2. Four skill cards that must include agent's name, brief description and how many agents have it active.
+  2. Four section cards for skills that must include agent's name, brief description and how many agents have it active.
     - If agents with active skill > 0 make it green, else red.
     - Include a more-vert menu with "View Details" and "Delete".
 
@@ -99,3 +99,6 @@ These are the requirements to consider the project done:
   2. All dropdown menus close when user clicks outside of their area.
   3. All modals close when user clicks on backdrop.
   4. Collapsable menus open and close properly on each size.
+  5. Responsiveness works.
+  6. Semantic HTML in place.
+
