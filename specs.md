@@ -18,7 +18,7 @@ Work only with:
   - Add anything that's not requested
 
 ## *Do*:
-  - Work mobile-first
+  - Work for viewports table and desktop
   - Make it responsive
   - Produce only what you're asked to on each stage of design and production
 
@@ -31,4 +31,13 @@ We're working for AgentHub, a SaaS platform where people can rent pre-configured
 The project is a full HTML prototype for an admin dashboard so the company's team can review it, validate and then hand it over to the backend developers.
 
 ## What do we need?
+
+### 1. Index.html
+
+  1. Fixed and permanent sidebar (1/4 width) with buttons for 6 sections ("Dashboard", "User Management", "Agent Management", "Skills", "Agents Contracts" and "Error Log").
+    1.1 Each button must have a state for "active" when user is on said section
+  
+  2. Each section loads on the right side of the screen (3/4 width) when button on sidebar is clicked, otherwise it stays hidden. "Dashboard" is the default section when first loading the site.
+
+#### Dashboard
 
