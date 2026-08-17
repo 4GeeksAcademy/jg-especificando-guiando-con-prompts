@@ -7,6 +7,7 @@ Work only with:
   - Semantic HTML
   - Vanilla JS only
   - Schema.org
+  - Aria labels
 
 # 3. Guardrails and Constraints
 
@@ -36,13 +37,12 @@ The project is a full HTML prototype for an admin dashboard so the company's tea
 
   1. Fixed and permanent sidebar (1/4 width) with buttons for 6 sections ("Dashboard", "User Management", "Agent Management", "Skills", "Agents Contracts" and "Error Log").
     1.1 Each button must have a *state for "active" when user is on said section*
-  
   2. Each section loads on the right side of the screen (3/4 width) when button on sidebar is clicked, otherwise it *stays hidden*. "Dashboard" is the default section when first loading the site.
 
 #### Dashboard
 
   1. Four section cards for metrics ("Total Income", "Discount Loses", "Active Agents", "Agents Failing").
-    - Each card must have: icon representing the name, a label, and a hardcoded value.
+    - Each card must have: icon representative of the name, a label, and a hardcoded value.
   2. A full width section below the cards with a graphic showing weekly activity.
 
 #### User Management
@@ -83,3 +83,19 @@ The project is a full HTML prototype for an admin dashboard so the company's tea
       + Error type badge is color coded for threat level (green === solved, yellow === minor error, red === critical error).
     - Has a more-vert with "View Details" and "Mark As Solved".
       + "View Details" opens modal with full error details.
+
+### 2. Global interactions and information
+
+  - Add a togle for dark/light theme (*using only Tailwind's dark:*)
+  - Each section has h1 with it's name.
+  - Overall colors for the website should be black, gray, dark blue and white.
+
+### 3. Acceptance criteria
+
+These are the requirements to consider the project done:
+
+  1. Dark/Light theme works properly on any size.
+    1.1. Chosen theme is active while switching sections.
+  2. All dropdown menus close when user clicks outside of their area.
+  3. All modals close when user clicks on backdrop.
+  4. Collapsable menus open and close properly on each size.
