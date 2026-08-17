@@ -35,9 +35,51 @@ The project is a full HTML prototype for an admin dashboard so the company's tea
 ### 1. Index.html
 
   1. Fixed and permanent sidebar (1/4 width) with buttons for 6 sections ("Dashboard", "User Management", "Agent Management", "Skills", "Agents Contracts" and "Error Log").
-    1.1 Each button must have a state for "active" when user is on said section
+    1.1 Each button must have a *state for "active" when user is on said section*
   
-  2. Each section loads on the right side of the screen (3/4 width) when button on sidebar is clicked, otherwise it stays hidden. "Dashboard" is the default section when first loading the site.
+  2. Each section loads on the right side of the screen (3/4 width) when button on sidebar is clicked, otherwise it *stays hidden*. "Dashboard" is the default section when first loading the site.
 
 #### Dashboard
 
+  1. Four section cards for metrics ("Total Income", "Discount Loses", "Active Agents", "Agents Failing").
+    - Each card must have: icon representing the name, a label, and a hardcoded value.
+  2. A full width section below the cards with a graphic showing weekly activity.
+
+#### User Management
+
+  1. Five rows table for users (hardcoded) showing: name, email, plan and status badge.
+    - Each row must have a more-vert menu which shows "View Details" and "Delete" when opened.
+      + "View Details" opens a modal with the full user registry and must close by clicking the "X" button or the backdrop.
+
+#### Agent Management
+
+  1. Four section cards for agents. Each must contain the agent's name, who owns it, status badge and a collapsible skill list.
+    - Clicking the expansion control reveals all skills the agent has with a smooth transition; clicking it again collapses it back.
+    - Each agent has a more-vert menu with "Configuration" and "Delete".
+      + Clicking on "Configuration" opens a modal for the agents system prompt (editable textarea).
+
+#### Skills
+
+  1. Heading with a brief explanation of what skills are in the context of AgentHub.
+  2. Four skill cards that must include agent's name, brief description and how many agents have it active.
+    - If agents with active skill > 0 make it green, else red.
+    - Include a more-vert menu with "View Details" and "Delete".
+
+#### Agents Contracts
+
+  1. Table with four items (2x2).
+    - Each item is labeled "Client Name Contract".
+    - It must show each agent the client has active.
+    - Active skills from each agent.
+    - Start and end date for contract.
+    - Paid total.
+    - Has a more-vert with "View Details"
+      + Modal with full contract disclosure, including skills and individual prices for each.
+
+#### Error Log
+
+  1. Six rows table with hardcoded errors.
+    - Timestamp, agent with the error, badge showing error type, and short description.
+      + Error type badge is color coded for threat level (green === solved, yellow === minor error, red === critical error).
+    - Has a more-vert with "View Details" and "Mark As Solved".
+      + "View Details" opens modal with full error details.
